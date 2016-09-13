@@ -1,0 +1,28 @@
+.red, red{
+	color: red;
+	text-align: center;
+}
+
+
+#AllForm{
+	line-height: 0;/*行間、ここを変更すると全部の行間が変更される*/
+	width: 300px;
+	margin: 30px auto 30px 0px;
+	padding: 20px;
+	border: 1px solid #000000;
+}
+.title, title{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.ID{
+	margin-bottom: 30px;/*margin-bottomで下との空白を開けることができる*/
+}
+input[name = "ID"], input[name = "PASS"]{/*入力フォーム自体を変える場合、このように指定*/
+	width: 200px;
+	
+}
+.Button1, Button1{
+	text-align: right;
+}
+
