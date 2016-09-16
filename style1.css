@@ -12,6 +12,7 @@
 	border: 1px solid #000000;
 }
 .title, title{
+	font-weight: 700;
 	text-align: center;
 	margin-bottom: 30px;
 }
