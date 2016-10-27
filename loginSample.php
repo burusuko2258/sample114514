@@ -10,10 +10,12 @@ $pass = 'fkmnuser';
 error_reporting(E_ALL ^ E_NOTICE);
 
 try{
-	$pdo = new PDO($db, $id, $pass);
+	$pdo = new PDO($db, $id, $pass);	//データベースとの接続
 
-	$sql = 'SELECT * FROM user';
-	$stmt = $pdo->query($sql);
+	$sql = 'SELECT * FROM user';	//SQL文の書き込み
+	$stmt = $pdo->query($sql);		//SQL文の呼び出し
+	$print_SQL = $stmt->fetch(PDO::FETCH_ASSOC);
+	print($print_SQL['UserName']);
 }catch(PDOException $e){
 	print('Error:'.$e->getMessage());
 	die();
